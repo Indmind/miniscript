@@ -4,7 +4,7 @@ def reverse(text):
     # loop setiap huruf
     for i in range(len(text)):
         # reversed = reversed + kata pada index panjang kata dikurangi 1 dikurangi 'i'
-        reversed = reversed + text[len(text) - 1 - i]
+        reversed += text[len(text) - 1 - i]
 
     # return kata yang sudah di reverse
     return reversed

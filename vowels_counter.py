@@ -1,6 +1,6 @@
 def countVowels(text):
     # huruf vokal
-    vowels_dat = ['a', 'i', 'u', 'e', 'o']
+    vowels_dat = 'aiueo'
 
     # data yang akan di return
     data = {
@@ -16,7 +16,7 @@ def countVowels(text):
             # mempunyai huruf vokal = true
             data['hasVowels'] = True
             # jumblah berapa kali huruf vokal muncul
-            data['vowels'][i] = data['vowels'][i] + 1
+            data['vowels'][i] += 1
     
     # total keseluruhan jumlah huruf vokal muncul
     data['sum'] = sum([data['vowels'][key] for key in data['vowels']])
